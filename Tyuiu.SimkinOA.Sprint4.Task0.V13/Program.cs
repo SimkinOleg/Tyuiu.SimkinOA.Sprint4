@@ -22,7 +22,8 @@ namespace Tyuiu.SimkinOA.Sprint4.Task0.V13
             DataService ds = new DataService();
             int[] array = { 2, 6, 2, 3, 4, 5, 4, 9, 7, 8 };
 
-            Console.Write("Исходный массив: { "); for (int i = 0; i < array.Length; i++)
+            Console.Write("Исходный массив: { "); 
+            for (int i = 0; i < array.Length; i++)
             {
                 if (i < 9)
                 {
@@ -35,7 +36,8 @@ namespace Tyuiu.SimkinOA.Sprint4.Task0.V13
             }
             Console.WriteLine("}");
             Console.WriteLine(); Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *"); Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *"); 
+            Console.WriteLine("***************************************************************************");
             Console.WriteLine("Сумма чётных элементов массива = " + ds.GetSumEvenArrEl(array));
             Console.ReadKey();
         }
