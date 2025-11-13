@@ -1,32 +1,46 @@
 ﻿using Tyuiu.SimkinOA.Sprint4.Task0.V13.Lib;
 namespace Tyuiu.SimkinOA.Sprint4.Task0.V13
+
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            Console.Title = "Спринт #4 | Выполнил: Симкин О.А.  | РППб-25-1";
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* Спринт #4                                                               *");
+            Console.WriteLine("* Тема: Одномерные массивы                                                *");
+            Console.WriteLine("* Задание #0                                                              *");
+            Console.WriteLine("* Вариант #13                                                             *");
+            Console.WriteLine("* Выполнил: Симкин Олег Андреевич | РППб-25-1                             *");
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* УСЛОВИЕ:                                                                *");
+            Console.WriteLine("* Написать программу, которая подсчитывает сумму четных элементов массива *");
+            Console.WriteLine("*                                                                         *");
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
+            Console.WriteLine("***************************************************************************");
             DataService ds = new DataService();
-            Console.WriteLine("********************************************************************");
-            Console.WriteLine("Исходные данные");
-            Console.WriteLine("********************************************************************");
+            int[] array = { 2, 6, 2, 3, 4, 5, 4, 9, 7, 8 };
 
-            int[] numsArray = { 2, 6, 2, 3, 4, 5, 4, 9, 7, 8 };
-
-
-
-            for (int i = 0; i <= numsArray.Length - 1; i++)
+            Console.Write("Исходный массив: { "); 
+            for (int i = 0; i < array.Length; i++)
             {
-                Console.WriteLine(numsArray[i]);
+                if (i < 9)
+                {
+                    Console.Write(array[i] + ", ");
+                }
+                else
+                {
+                    Console.Write(array[i] + " ");
+                }
             }
-
-            Console.WriteLine("********************************************************************");
-            Console.WriteLine("РЕЗУЛЬТАТ");
-            Console.WriteLine("********************************************************************");
-            Console.WriteLine("РЕЗУЛЬТАТ");
-            int sum = ds.GetSumEvenArrEl(numsArray);
-            Console.WriteLine("Сумма четных чисел: " + sum);
-
-            Console.WriteLine();
+            Console.WriteLine("}");
+            Console.WriteLine(); 
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *"); 
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("Сумма чётных элементов массива = " + ds.GetSumEvenArrEl(array));
             Console.ReadKey();
         }
     }
