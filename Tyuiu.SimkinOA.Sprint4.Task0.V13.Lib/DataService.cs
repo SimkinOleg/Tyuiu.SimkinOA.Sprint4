@@ -1,6 +1,6 @@
 ﻿using tyuiu.cources.programming.interfaces.Sprint4;
 namespace Tyuiu.SimkinOA.Sprint4.Task0.V13.Lib
-{{
+{
     public class DataService : ISprint4Task0V13
     {
         public int GetSumEvenArrEl(int[] array)
